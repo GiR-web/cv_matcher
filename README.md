@@ -2,13 +2,16 @@
 
 API desenvolvida com **FastAPI** para avaliar a compatibilidade entre um currículo e uma descrição de vaga por meio de **similaridade semântica de texto**.
 
-O sistema utiliza técnicas de **Processamento de Linguagem Natural (NLP)** para transformar os textos em embeddings numéricos e calcular o grau de correspondência entre eles usando **cosine similarity**.
+O sistema utiliza técnicas de **Processamento de Linguagem Natural (NLP)** para gerar embeddings dos textos com **Sentence Transformers** e calcular o grau de correspondência usando **cosine similarity**.
 
-O projeto demonstra uma aplicação prática de modelos de linguagem para **análise de significado**, sem uso de modelos generativos, fine-tuning ou persistência de dados.
+O projeto demonstra uma aplicação prática de **análise semântica**, sem uso de modelos generativos, APIs comerciais ou fine-tuning.
 
 ## Principais características
-- Geração de embeddings com **Sentence Transformers**
+- Geração de embeddings com Sentence Transformers (MiniLM)
 - Cálculo de similaridade semântica entre CV e vaga
-- Extração básica de habilidades (skills)
-- API REST documentada via **Swagger / OpenAPI**
-- Arquitetura simples, modular e orientada a serviços
+- Extração básica de habilidades via palavras-chave
+- Geração de strengths, gaps e sugestões
+- API REST documentada automaticamente via Swagger (OpenAPI)
+- Arquitetura simples e modular com FastAPI
+
+
